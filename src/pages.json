@@ -1,16 +1,74 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "pages": [
+    {
+      "path": "pages/home/home",
+      "style": {
+        "navigationBarTitleText": "智慧农业"
+      }
+    },
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登录界面"
+      }
+    },
+
+    {
+      "path": "pages/light/light",
+      "style": {
+        "navigationBarTitleText": "光照"
+      }
+    },
+    {
+      "path": "pages/temperature/temperature",
+      "style": {
+        "navigationBarTitleText": "温度"
+      }
+    },
+    {
+      "path": "pages/moisture/moisture",
+      "style": {
+        "navigationBarTitleText": "湿度"
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "智慧农业"
+      },
+      {
+        "pagePath": "pages/light/light",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "光照"
+      },
+      {
+        "pagePath": "pages/temperature/temperature",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "温度"
+      },
+      {
+        "pagePath": "pages/moisture/moisture",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "湿度"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "智慧农业系统",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
 }
